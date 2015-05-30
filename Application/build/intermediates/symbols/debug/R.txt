@@ -9,10 +9,12 @@ int attr contentPaddingBottom 0x7f01000a
 int attr contentPaddingLeft 0x7f010007
 int attr contentPaddingRight 0x7f010008
 int attr contentPaddingTop 0x7f010009
-int color cardview_dark_background 0x7f060000
-int color cardview_light_background 0x7f060001
-int color cardview_shadow_end_color 0x7f060002
-int color cardview_shadow_start_color 0x7f060003
+int color banner_background 0x7f060000
+int color cardview_dark_background 0x7f060002
+int color cardview_light_background 0x7f060003
+int color cardview_shadow_end_color 0x7f060004
+int color cardview_shadow_start_color 0x7f060005
+int color light_tint 0x7f060001
 int dimen cardview_compat_inset_shadow 0x7f040002
 int dimen cardview_default_elevation 0x7f040003
 int dimen cardview_default_radius 0x7f040004

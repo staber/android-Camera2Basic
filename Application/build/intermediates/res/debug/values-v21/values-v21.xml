@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values-v21/base-colors.xml -->
+    <eat-comment/>
+    <color name="banner_background">#424242</color>
+    <color name="light_tint">#EEEEEE</color>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values-v21/base-template-styles.xml -->
     <eat-comment/>
     <style name="Theme.Base" parent="android:Theme.Material.Light">

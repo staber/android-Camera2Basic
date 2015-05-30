@@ -41,6 +41,7 @@ import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
@@ -215,6 +216,8 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
      */
     private File mFile;
 
+    private String saveDir, fileName;
+
     /**
      * This a callback object for the {@link ImageReader}. "onImageAvailable" will be called when a
      * still image is ready to be saved.
@@ -224,6 +227,10 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
 
         @Override
         public void onImageAvailable(ImageReader reader) {
+            // create the filename with timestamp
+            Long tsLong = System.currentTimeMillis() / 1000;
+            fileName = "IMG_" + tsLong.toString() + ".jpg";
+            mFile = new File(saveDir, fileName);
             mBackgroundHandler.post(new ImageSaver(reader.acquireNextImage(), mFile));
         }
 
@@ -395,7 +402,12 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mFile = new File(getActivity().getExternalFilesDir(null), "pic.jpg");
+        saveDir = Environment.getExternalStorageDirectory().toString()+"/DCIM/Camera/";
+        File f = new File(saveDir);
+        //creates the directory
+        if (!f.isDirectory()) {
+            f.mkdir();
+        }
     }
 
     @Override
@@ -713,7 +725,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request,
                                                TotalCaptureResult result) {
-                    showToast("Saved: " + mFile);
+                    showToast("Saved to Camera Roll");
                     unlockFocus();
                 }
             };

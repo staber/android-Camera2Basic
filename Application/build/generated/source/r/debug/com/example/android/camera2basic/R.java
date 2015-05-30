@@ -116,10 +116,12 @@ containing a value of this type.
         public static final int contentPaddingTop=0x7f010009;
     }
     public static final class color {
-        public static final int cardview_dark_background=0x7f060000;
-        public static final int cardview_light_background=0x7f060001;
-        public static final int cardview_shadow_end_color=0x7f060002;
-        public static final int cardview_shadow_start_color=0x7f060003;
+        public static final int banner_background=0x7f060000;
+        public static final int cardview_dark_background=0x7f060002;
+        public static final int cardview_light_background=0x7f060003;
+        public static final int cardview_shadow_end_color=0x7f060004;
+        public static final int cardview_shadow_start_color=0x7f060005;
+        public static final int light_tint=0x7f060001;
     }
     public static final class dimen {
         public static final int cardview_compat_inset_shadow=0x7f040002;
