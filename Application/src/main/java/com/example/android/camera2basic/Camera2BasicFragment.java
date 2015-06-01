@@ -67,6 +67,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -241,8 +242,13 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
         @Override
         public void onImageAvailable(ImageReader reader) {
             // create the filename with timestamp
+            Calendar c = Calendar.getInstance();
+            String sYear = String.format("%04d",c.get(Calendar.YEAR));
+            String sMonth = String.format("%02d",c.get(Calendar.MONTH));
+            String sDay = String.format("%02d",c.get(Calendar.DAY_OF_MONTH));
             Long tsLong = System.currentTimeMillis() / 1000;
-            fileName = "IMG_" + tsLong.toString() + ".jpg";
+            fileName = sYear + sMonth + sDay + "_" + tsLong.toString();
+            fileName = "IMG_" + fileName + ".jpg";
             mFile = new File(saveDir, fileName);
             mBackgroundHandler.post(new ImageSaver(reader.acquireNextImage(), mFile));
         }
@@ -407,6 +413,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
 
     @Override
     public void onViewCreated(final View view, Bundle savedInstanceState) {
+        view.findViewById(R.id.settings).setOnClickListener(this);
         view.findViewById(R.id.picture).setOnClickListener(this);
         view.findViewById(R.id.info).setOnClickListener(this);
         view.findViewById(R.id.focus).setOnClickListener(this);
@@ -761,41 +768,6 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 mTextureView.animate().alpha(1f).setDuration(SCREEN_FLASH_TIME);
             }
         });
-
-        /** Circle hide/show flash */
-        /*final View myView  = mTextureView;
-        // get the center for the clipping circle
-        final int cx = (myView.getLeft() + myView.getRight()) / 2;
-        final int cy = (myView.getTop() + myView.getBottom()) / 2;
-
-        // get the initial radius for the clipping circle
-        int initialRadius = myView.getWidth();
-
-        // get the final radius for the clipping circle
-        final int finalRadius = Math.max(myView.getWidth(), myView.getHeight());
-
-        // create the animation (the final radius is zero)
-        Animator anim =
-                ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, 0);
-        // make the view invisible when the animation is done
-        anim.addListener(new AnimatorListenerAdapter() {
-            @Override
-            public void onAnimationEnd(Animator animation) {
-                super.onAnimationEnd(animation);
-                // create the animator for this view (the start radius is zero)
-                Animator anim =
-                        ViewAnimationUtils.createCircularReveal(myView, cx, cy, 0, finalRadius);
-
-                anim.setDuration(SCREEN_FLASH_TIME);
-                // make the view visible and start the animation
-                myView.setVisibility(View.VISIBLE);
-                anim.start();
-            }
-        });
-
-        anim.setDuration(SCREEN_FLASH_TIME);
-        // start the animation
-        anim.start();*/
     }
 
     /**
@@ -826,15 +798,73 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 takePicture();
                 break;
             }
+            case R.id.settings: {
+                Activity activity = getActivity();
+                final LinearLayout settingsLayout = (LinearLayout) activity.findViewById(R.id.settings_layout);
+                final LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
+                final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                if (null != menuLayout  && null != adjustLayout) {
+                    if (menuLayout.getTranslationY() < 0){
+                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                adjustLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                menuLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                    }
+                }
+                if (null != settingsLayout) {
+                    if (settingsLayout.getTranslationY() < 0) {
+                        settingsLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                settingsLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                    } else {
+                        settingsLayout.setVisibility(View.VISIBLE);
+                        settingsLayout.animate().translationY(-settingsLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                    }
+                }
+                break;
+            }
             case R.id.info: {
                 Activity activity = getActivity();
-                LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
-                FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                final LinearLayout settingsLayout = (LinearLayout) activity.findViewById(R.id.settings_layout);
+                final LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
+                final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                if (null != settingsLayout) {
+                    if (settingsLayout.getTranslationY() < 0) {
+                        settingsLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                settingsLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                    }
+                }
                 if (null != menuLayout  && null != adjustLayout) {
                     if (menuLayout.getTranslationY() < 0) {
-                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).start();
-                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).start();
+                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                adjustLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                menuLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
                     } else {
+                        menuLayout.setVisibility(View.VISIBLE);
                         menuLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
                         adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
                     }
@@ -844,12 +874,19 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
             default: {
                 Activity activity = getActivity();
                 LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
-                FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
                 if (null != menuLayout  && null != adjustLayout) {
                     if (adjustLayout.getTranslationY() < -menuLayout.getHeight()) {
-                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
-                    } else
+                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
+                            @Override
+                            public void run() {
+                                adjustLayout.setVisibility(View.INVISIBLE);
+                            }
+                        }).start();
+                    } else {
+                        adjustLayout.setVisibility(View.VISIBLE);
                         adjustLayout.animate().translationY(-menuLayout.getHeight()-adjustLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                    }
                 }
                 break;
             }

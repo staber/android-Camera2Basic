@@ -28,6 +28,7 @@
 
     <FrameLayout
         android:id="@+id/adjustment_layout"
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/shutter_layout"
@@ -35,19 +36,17 @@
         android:layout_below="@id/texture"
         android:background="@color/light_alpha_tint">
 
-        <SeekBar
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
             android:id="@+id/seekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="@dimen/margin_medium"
-            android:progressTint="@color/theme_base"
-            android:max="100"/>
+            android:padding="@dimen/margin_medium"/>
 
     </FrameLayout>
 
     <LinearLayout
         android:id="@+id/menu_layout"
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -64,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical|left"
             android:tint="@color/banner_background"
-            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+            android:src="@drawable/ic_center_focus_strong_white_24dp" />
 
         <ImageButton
             android:id="@+id/flash"
@@ -74,7 +73,40 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:tint="@color/banner_background"
-            android:src="@drawable/abc_ic_menu_moreoverflow_mtrl_alpha" />
+            android:src="@drawable/ic_flash_auto_white_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_layout"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/shutter_layout"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/texture"
+        android:background="@color/light_tint">
+
+        <ImageButton
+            android:id="@+id/gps"
+            android:contentDescription="@string/description_info"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/banner_background"
+            android:src="@drawable/ic_location_on_white_24dp" />
+
+        <ImageButton
+            android:id="@+id/audio"
+            android:contentDescription="@string/description_info"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:tint="@color/banner_background"
+            android:src="@drawable/ic_volume_up_white_24dp" />
 
     </LinearLayout>
 
@@ -88,11 +120,23 @@
         android:background="@color/banner_background">
 
         <ImageButton
+            android:id="@+id/settings"
+            android:contentDescription="@string/description_settings"
+            style="@android:style/Widget.Material.Light.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|left"
+            android:padding="20dp"
+            android:tint="@color/light_tint"
+            android:src="@drawable/ic_settings_white_24dp" />
+
+        <ImageButton
             android:id="@+id/picture"
             android:contentDescription="@string/picture"
             style="@android:style/Widget.Material.Light.Button.Borderless"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
+            android:padding="20dp"
             android:layout_gravity="center"
             android:tint="@color/light_tint"
             android:background="@drawable/abc_btn_switch_to_on_mtrl_00001"/>

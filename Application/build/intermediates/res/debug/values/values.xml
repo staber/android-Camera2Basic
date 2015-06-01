@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.github.AnderWeb/discreteSeekBar/a3b5deadf3/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference" name="discreteSeekBarStyle"/>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
@@ -48,6 +51,13 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.github.AnderWeb/discreteSeekBar/a3b5deadf3/res/values/values.xml -->
+    <eat-comment/>
+    <color name="dsb_disabled_color">#66939393</color>
+    <color name="dsb_progress_color">#ff009688</color>
+    <color name="dsb_ripple_color_focused">#99999999</color>
+    <color name="dsb_ripple_color_pressed">#77939393</color>
+    <color name="dsb_track_color">#ff939393</color>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/design/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <color name="error_color">#FFDD2C00</color>
@@ -120,6 +130,7 @@
     <declare-styleable name="CollapsingToolbarLayout"><attr format="dimension" name="expandedTitleMargin"/><attr format="dimension" name="expandedTitleMarginStart"/><attr format="dimension" name="expandedTitleMarginTop"/><attr format="dimension" name="expandedTitleMarginEnd"/><attr format="dimension" name="expandedTitleMarginBottom"/><attr format="reference" name="expandedTitleTextAppearance"/><attr format="reference" name="collapsedTitleTextAppearance"/><attr format="color" name="contentScrim"/><attr format="color" name="statusBarScrim"/><attr format="reference" name="toolbarId"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
+    <declare-styleable name="DiscreteSeekBar"><attr format="integer|dimension" name="dsb_min"/><attr format="integer|dimension" name="dsb_max"/><attr format="integer|dimension" name="dsb_value"/><attr format="boolean" name="dsb_mirrorForRtl"/><attr format="boolean" name="dsb_allowTrackClickToDrag"/><attr format="color|reference" name="dsb_progressColor"/><attr format="color|reference" name="dsb_trackColor"/><attr format="reference" name="dsb_indicatorTextAppearance"/><attr format="color|reference" name="dsb_indicatorColor"/><attr format="dimension" name="dsb_indicatorElevation"/><attr format="string|reference" name="dsb_indicatorFormatter"/><attr format="color|reference" name="dsb_rippleColor"/></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="topBottomBarArrowSize"/><attr format="dimension" name="middleBarArrowSize"/><attr format="dimension" name="barSize"/><attr format="dimension" name="thickness"/></declare-styleable>
     <declare-styleable name="FloatingActionButton"><attr name="android:background"/><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/></declare-styleable>
     <declare-styleable name="LinearLayoutCompat"><attr name="android:orientation"/><attr name="android:gravity"/><attr name="android:baselineAligned"/><attr name="android:baselineAlignedChildIndex"/><attr name="android:weightSum"/><attr format="boolean" name="measureWithLargestChild"/><attr name="divider"/><attr name="showDividers"><flag name="none" value="0"/><flag name="beginning" value="1"/><flag name="middle" value="2"/><flag name="end" value="4"/></attr><attr format="dimension" name="dividerPadding"/></declare-styleable>
@@ -326,6 +337,7 @@
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="description_info">Info</string>
+    <string name="description_settings">Settings</string>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values/base-strings.xml -->
     <eat-comment/>
     <string name="intro_message">
@@ -1289,6 +1301,21 @@
     </style>
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+    <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.github.AnderWeb/discreteSeekBar/a3b5deadf3/res/values/values.xml -->
+    <eat-comment/>
+    <style name="DefaultIndicatorTextAppearance" parent="android:TextAppearance.Small">
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:padding">6dp</item>
+    </style>
+    <style name="DefaultSeekBar" parent="android:Widget">
+        <item name="dsb_indicatorTextAppearance">@style/DefaultIndicatorTextAppearance</item>
+        <item name="dsb_progressColor">@color/dsb_progress_color_list</item>
+        <item name="dsb_trackColor">@color/dsb_track_color_list</item>
+        <item name="dsb_rippleColor">@color/dsb_ripple_color_list</item>
+        <item name="dsb_indicatorColor">@color/dsb_progress_color</item>
+        <item name="dsb_indicatorElevation">4dp</item>
+        <item name="dsb_mirrorForRtl">true</item>
     </style>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values/styles.xml -->
     <eat-comment/>
