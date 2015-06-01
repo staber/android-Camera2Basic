@@ -2,48 +2,6 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-1645af67331c0d24b013125aef1dc311abca3231.jar" />
-    </item>
-    <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-1305d3bf2b482f26f4effe19be0c408ba631306d.jar" />
-    </item>
-    <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-3bbae0fe6bfe4b9ff4feede9ead3161b57b4ed48.jar" />
-    </item>
-    <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="9aa93835393824b436f366120c9ba8a0260ce75d">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-2f151daa23d6a9408d8408139fb8ce82c84b1c6b.jar" />
-    </item>
-    <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.github.AnderWeb\discreteSeekBar\a3b5deadf3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="6dbbe18bd218decd5418856c1bac6f438ab554c9">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-22844bfba78b5eb0667ae4db45e3c015a4ea79d2.jar" />
-    </item>
-    <item
-        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-089f896944bcbe1852a87dd1222b23378f64e4fa.jar" />
-    </item>
-    <item
         jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\cardview-v7\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -58,11 +16,53 @@
         <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-a0d76130f8816c30898c0bc1e949733dab7a6829.jar" />
     </item>
     <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-089f896944bcbe1852a87dd1222b23378f64e4fa.jar" />
+    </item>
+    <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.github.AnderWeb\discreteSeekBar\a3b5deadf3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="6dbbe18bd218decd5418856c1bac6f438ab554c9">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-22844bfba78b5eb0667ae4db45e3c015a4ea79d2.jar" />
+    </item>
+    <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9aa93835393824b436f366120c9ba8a0260ce75d">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-2f151daa23d6a9408d8408139fb8ce82c84b1c6b.jar" />
+    </item>
+    <item
         jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
         <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-9eb488d7ab90e7950e357a4dff57b183cd603326.jar" />
+    </item>
+    <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-1645af67331c0d24b013125aef1dc311abca3231.jar" />
+    </item>
+    <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\classes-3bbae0fe6bfe4b9ff4feede9ead3161b57b4ed48.jar" />
+    </item>
+    <item
+        jar="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\exploded-aar\com.android.support\support-v13\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="79a5b6d9fbab3b5fb4c6f86a1ed7a17722fd937b">
+        <dex dex="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-1305d3bf2b482f26f4effe19be0c408ba631306d.jar" />
     </item>
 
 </items>

@@ -16,15 +16,12 @@
 
 package com.example.android.camera2basic;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.res.Configuration;
 import android.graphics.ImageFormat;
 import android.graphics.Matrix;
@@ -54,7 +51,6 @@ import android.view.LayoutInflater;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
-import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
@@ -380,7 +376,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
      */
     private static Size chooseOptimalSize(Size[] choices, int width, int height, Size aspectRatio) {
         // Collect the supported resolutions that are at least as big as the preview Surface
-        List<Size> bigEnough = new ArrayList<Size>();
+        List<Size> bigEnough = new ArrayList<>();
         int w = aspectRatio.getWidth();
         int h = aspectRatio.getHeight();
         for (Size option : choices) {
@@ -761,13 +757,9 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
 
     private void flashScreen() {
         /** Quick screen flash flash */
-        mTextureView.animate().alpha(0f).setDuration(SCREEN_FLASH_TIME)
-                .withEndAction(new Runnable() {
-            @Override
-            public void run() {
-                mTextureView.animate().alpha(1f).setDuration(SCREEN_FLASH_TIME);
-            }
-        });
+        mTextureView.animate().alpha(0f)
+                .setDuration(SCREEN_FLASH_TIME)
+                .withEndAction(() -> mTextureView.animate().alpha(1f).setDuration(SCREEN_FLASH_TIME));
     }
 
     /**
@@ -805,31 +797,23 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
                 if (null != menuLayout  && null != adjustLayout) {
                     if (menuLayout.getTranslationY() < 0){
-                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                adjustLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
-                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                menuLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
+                        adjustLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> adjustLayout.setVisibility(View.INVISIBLE));
+                        menuLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> menuLayout.setVisibility(View.INVISIBLE));
                     }
                 }
                 if (null != settingsLayout) {
                     if (settingsLayout.getTranslationY() < 0) {
-                        settingsLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                settingsLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
+                        settingsLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> settingsLayout.setVisibility(View.INVISIBLE));
                     } else {
                         settingsLayout.setVisibility(View.VISIBLE);
-                        settingsLayout.animate().translationY(-settingsLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                        settingsLayout.animate().translationY(-settingsLayout.getHeight())
+                                .setDuration(MENU_OPEN_TIME);
                     }
                 }
                 break;
@@ -841,32 +825,23 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
                 if (null != settingsLayout) {
                     if (settingsLayout.getTranslationY() < 0) {
-                        settingsLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                settingsLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
+                        settingsLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> settingsLayout.setVisibility(View.INVISIBLE));
                     }
                 }
                 if (null != menuLayout  && null != adjustLayout) {
                     if (menuLayout.getTranslationY() < 0) {
-                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                adjustLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
-                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                menuLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
+                        adjustLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> adjustLayout.setVisibility(View.INVISIBLE));
+                        menuLayout.animate().translationY(0f)
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> menuLayout.setVisibility(View.INVISIBLE));
                     } else {
                         menuLayout.setVisibility(View.VISIBLE);
-                        menuLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
-                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                        menuLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME);
+                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME);
                     }
                 }
                 break;
@@ -877,15 +852,13 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
                 if (null != menuLayout  && null != adjustLayout) {
                     if (adjustLayout.getTranslationY() < -menuLayout.getHeight()) {
-                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).withEndAction(new Runnable() {
-                            @Override
-                            public void run() {
-                                adjustLayout.setVisibility(View.INVISIBLE);
-                            }
-                        }).start();
+                        adjustLayout.animate().translationY(-menuLayout.getHeight())
+                                .setDuration(MENU_OPEN_TIME)
+                                .withEndAction(() -> adjustLayout.setVisibility(View.INVISIBLE));
                     } else {
                         adjustLayout.setVisibility(View.VISIBLE);
-                        adjustLayout.animate().translationY(-menuLayout.getHeight()-adjustLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                        adjustLayout.animate().setDuration(MENU_OPEN_TIME)
+                                .translationY(-menuLayout.getHeight()-adjustLayout.getHeight());
                     }
                 }
                 break;
@@ -960,11 +933,8 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
             final Activity activity = getActivity();
             return new AlertDialog.Builder(activity)
                     .setMessage("This device doesn't support Camera2 API.")
-                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialogInterface, int i) {
-                            activity.finish();
-                        }
+                    .setPositiveButton(android.R.string.ok, (dialogInterface, i) -> {
+                        activity.finish();
                     })
                     .create();
         }
