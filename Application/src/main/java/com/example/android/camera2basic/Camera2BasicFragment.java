@@ -27,6 +27,7 @@ import android.graphics.ImageFormat;
 import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.graphics.SurfaceTexture;
+import android.graphics.drawable.Drawable;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CameraCharacteristics;
@@ -53,6 +54,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -118,6 +120,12 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
      * Screen Flash when picture was taken.
      */
     private static final int MENU_OPEN_TIME = 300;
+    /**
+     *  Flash States.
+     */
+    private static final int FLASH_AUTO = 0;
+    private static final int FLASH_ON = 1;
+    private static final int FLASH_OFF = 2;
 
     /**
      * {@link TextureView.SurfaceTextureListener} handles several lifecycle events on a
@@ -349,6 +357,10 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
             }
         }
     };
+    private boolean gpsActive = true;
+    private boolean audioActive = true;
+    private int flashState = FLASH_AUTO;
+    private Drawable flashDrawable;
 
     /**
      * Shows a {@link Toast} on the UI thread.
@@ -414,6 +426,8 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
         view.findViewById(R.id.info).setOnClickListener(this);
         view.findViewById(R.id.focus).setOnClickListener(this);
         view.findViewById(R.id.flash).setOnClickListener(this);
+        view.findViewById(R.id.gps).setOnClickListener(this);
+        view.findViewById(R.id.audio).setOnClickListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     }
 
@@ -795,8 +809,8 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 final LinearLayout settingsLayout = (LinearLayout) activity.findViewById(R.id.settings_layout);
                 final LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
-                if (null != menuLayout  && null != adjustLayout) {
-                    if (menuLayout.getTranslationY() < 0){
+                if (null != menuLayout && null != adjustLayout) {
+                    if (menuLayout.getTranslationY() < 0) {
                         adjustLayout.animate().translationY(0f)
                                 .setDuration(MENU_OPEN_TIME)
                                 .withEndAction(() -> adjustLayout.setVisibility(View.INVISIBLE));
@@ -830,7 +844,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                                 .withEndAction(() -> settingsLayout.setVisibility(View.INVISIBLE));
                     }
                 }
-                if (null != menuLayout  && null != adjustLayout) {
+                if (null != menuLayout && null != adjustLayout) {
                     if (menuLayout.getTranslationY() < 0) {
                         adjustLayout.animate().translationY(0f)
                                 .setDuration(MENU_OPEN_TIME)
@@ -846,11 +860,34 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 }
                 break;
             }
+            case R.id.gps: {
+                ImageButton imageButton = (ImageButton) getActivity().findViewById(R.id.gps);
+                gpsActive = !gpsActive;
+                imageButton.setImageDrawable(isGpsActive() ?
+                        getResources().getDrawable(R.drawable.ic_location_on_white_24dp, null) :
+                        getResources().getDrawable(R.drawable.ic_location_off_white_24dp, null));
+                break;
+            }
+            case R.id.audio: {
+                ImageButton imageButton = (ImageButton) getActivity().findViewById(R.id.audio);
+                audioActive = !audioActive;
+                imageButton.setImageDrawable(isAudioActive() ?
+                        getResources().getDrawable(R.drawable.ic_volume_up_white_24dp, null) :
+                        getResources().getDrawable(R.drawable.ic_volume_off_white_24dp, null));
+                break;
+            }
+            case R.id.flash: {
+                ImageButton imageButton = (ImageButton) getActivity().findViewById(R.id.flash);
+                flashState = flashState + 1;
+                if (flashState > FLASH_OFF) flashState = FLASH_AUTO;
+                imageButton.setImageDrawable(getFlashDrawable());
+                break;
+            }
             default: {
                 Activity activity = getActivity();
                 LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
-                if (null != menuLayout  && null != adjustLayout) {
+                if (null != menuLayout && null != adjustLayout) {
                     if (adjustLayout.getTranslationY() < -menuLayout.getHeight()) {
                         adjustLayout.animate().translationY(-menuLayout.getHeight())
                                 .setDuration(MENU_OPEN_TIME)
@@ -858,12 +895,35 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                     } else {
                         adjustLayout.setVisibility(View.VISIBLE);
                         adjustLayout.animate().setDuration(MENU_OPEN_TIME)
-                                .translationY(-menuLayout.getHeight()-adjustLayout.getHeight());
+                                .translationY(-menuLayout.getHeight() - adjustLayout.getHeight());
                     }
                 }
                 break;
             }
         }
+    }
+
+    public boolean isGpsActive() {
+        return gpsActive;
+    }
+
+    public boolean isAudioActive() {
+        return audioActive;
+    }
+
+    public Drawable getFlashDrawable() {
+        switch (flashState){
+            case FLASH_AUTO:
+                flashDrawable = getActivity().getResources().getDrawable(R.drawable.ic_flash_auto_white_24dp, null);
+                break;
+            case FLASH_ON:
+                flashDrawable = getActivity().getResources().getDrawable(R.drawable.ic_flash_on_white_24dp, null);
+                break;
+            case FLASH_OFF:
+                flashDrawable = getActivity().getResources().getDrawable(R.drawable.ic_flash_off_white_24dp, null);
+                break;
+        }
+        return flashDrawable;
     }
 
     /**

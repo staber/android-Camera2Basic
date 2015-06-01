@@ -11,106 +11,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf15543f-f376-4bd2-8be7-4de4de14b0ee" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$10.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$11.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$12.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$13.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$14.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$15.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$8.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$9.class" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$ErrorDialog$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$$Lambda$10.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\astaber\Android\Projects\Camera2Basic\Application\build\intermediates\classes\debug\com\example\android\camera2basic\Camera2BasicFragment$$Lambda$9.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug-unaligned.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug-unaligned.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" afterPath="$PROJECT_DIR$/Application/build/outputs/apk/Application-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/AutoFitTextureView.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/AutoFitTextureView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/BuildConfig.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$6.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$7.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$8.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$$Lambda$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$1.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$1.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$2.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$2.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$3.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$3.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$4.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$4.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$5.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$5.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$6.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$6.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$7.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$7.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$7.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$CompareSizesByArea.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$CompareSizesByArea.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$CompareSizesByArea.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$CompareSizesByArea.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$ErrorDialog.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$ErrorDialog.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$ErrorDialog.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$ErrorDialog.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$ImageSaver.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment$ImageSaver.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$ImageSaver.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment$ImageSaver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/Camera2BasicFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/CameraActivity.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/CameraActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$anim.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$anim.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$anim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$attr.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$attr.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$attr.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$attr.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$bool.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$bool.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$bool.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$color.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$color.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$color.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$color.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$color.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$dimen.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$dimen.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$dimen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/Camera2BasicFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/android/support/design/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/android/support/design/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/android/support/v7/appcompat/R$drawable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$drawable.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$id.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$integer.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$integer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$id.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$integer.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$integer.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$string.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$string.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$layout.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$string.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$string.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$style.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$style.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/design/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/appcompat/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/android/support/v7/cardview/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$styleable.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R$styleable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/com/example/android/camera2basic/R.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R.class" afterPath="$PROJECT_DIR$/Application/build/intermediates/classes/debug/org/adw/library/widgets/discreteseekbar/R.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R.class" afterPath="$PROJECT_DIR$/Application/build/retrolambda/debug/com/example/android/camera2basic/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-089f896944bcbe1852a87dd1222b23378f64e4fa.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-089f896944bcbe1852a87dd1222b23378f64e4fa.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-1645af67331c0d24b013125aef1dc311abca3231.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-1645af67331c0d24b013125aef1dc311abca3231.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-22844bfba78b5eb0667ae4db45e3c015a4ea79d2.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-22844bfba78b5eb0667ae4db45e3c015a4ea79d2.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-2f151daa23d6a9408d8408139fb8ce82c84b1c6b.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-2f151daa23d6a9408d8408139fb8ce82c84b1c6b.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-3bbae0fe6bfe4b9ff4feede9ead3161b57b4ed48.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-3bbae0fe6bfe4b9ff4feede9ead3161b57b4ed48.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-facf9c7938be61125c681db6154bdd35970ac418.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/classes-facf9c7938be61125c681db6154bdd35970ac418.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/dex/debug/classes.dex" afterPath="$PROJECT_DIR$/Application/build/intermediates/dex/debug/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/gradle_project_sync_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-1305d3bf2b482f26f4effe19be0c408ba631306d.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-1305d3bf2b482f26f4effe19be0c408ba631306d.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-9eb488d7ab90e7950e357a4dff57b183cd603326.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-9eb488d7ab90e7950e357a4dff57b183cd603326.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/resources/resources-debug.ap_" afterPath="$PROJECT_DIR$/Application/build/intermediates/resources/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-a0d76130f8816c30898c0bc1e949733dab7a6829.jar" afterPath="$PROJECT_DIR$/Application/build/intermediates/pre-dexed/debug/support-annotations-22.2.0-a0d76130f8816c30898c0bc1e949733dab7a6829.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Application.iml" afterPath="$PROJECT_DIR$/Application/Application.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Camera2Basic.iml" afterPath="$PROJECT_DIR$/Camera2Basic.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java" afterPath="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build.gradle" afterPath="$PROJECT_DIR$/Application/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/design/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/design/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/camera2basic/R.java" afterPath="$PROJECT_DIR$/Application/build/generated/source/r/debug/com/example/android/camera2basic/R.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/Application/build/intermediates/symbols/debug/R.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/fragment_camera2_basic.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/res/debug/layout/fragment_camera2_basic.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeResources/debug/merger.xml" afterPath="$PROJECT_DIR$/Application/build/intermediates/incremental/mergeResources/debug/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Camera2Basic.iws" />
@@ -142,9 +106,14 @@
       <file leaf-file-name="Camera2BasicFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.703704">
-              <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
-              <folding />
+            <state vertical-scroll-proportion="-26.222221">
+              <caret line="879" column="95" selection-start-line="879" selection-start-column="95" selection-end-line="879" selection-end-column="95" />
+              <folding>
+                <element signature="e#36755#36756#0" expanded="true" />
+                <element signature="e#36787#36788#0" expanded="true" />
+                <element signature="e#36825#36826#0" expanded="true" />
+                <element signature="e#36859#36860#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,14 +138,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fragment_camera2_basic.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="fragment_camera2_basic.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.111111">
-              <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.5">
+              <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
               <folding>
                 <element signature="e#1757#1779#0" expanded="true" />
                 <element signature="e#2317#2343#0" expanded="true" />
@@ -193,21 +162,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.24">
-              <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3536404">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1572,9 +1531,10 @@
         <option value="$PROJECT_DIR$/Application/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/values/template-styles.xml" />
         <option value="$PROJECT_DIR$/Application/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml" />
-        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java" />
         <option value="$PROJECT_DIR$/Application/build.gradle" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/drawable/gps_toggle" />
+        <option value="$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java" />
+        <option value="$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml" />
       </list>
     </option>
   </component>
@@ -2072,7 +2032,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1626" height="1062" extended-state="7" />
+    <frame x="-6" y="-6" width="1626" height="1062" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2088,7 +2048,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23689957" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23689957" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23727736" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2179,30 +2139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/base-colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/template-dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/Application/build/intermediates/exploded-aar/com.github.AnderWeb/discreteSeekBar/a3b5deadf3/jars/classes.jar!/org/adw/library/widgets/discreteseekbar/DiscreteSeekBar.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1574074">
@@ -2216,28 +2152,6 @@
         <state vertical-scroll-proportion="-12.24">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.111111">
-          <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
-          <folding>
-            <element signature="e#1757#1779#0" expanded="true" />
-            <element signature="e#2317#2343#0" expanded="true" />
-            <element signature="e#2796#2822#0" expanded="true" />
-            <element signature="e#3702#3728#0" expanded="true" />
-            <element signature="e#4168#4194#0" expanded="true" />
-            <element signature="e#4997#5027#0" expanded="true" />
-            <element signature="e#5499#5516#0" expanded="true" />
-            <element signature="e#5625#5645#0" expanded="true" />
-            <element signature="e#5680#5700#0" expanded="true" />
-            <element signature="e#5998#6024#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2265,19 +2179,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java">
+    <entry file="file://$PROJECT_DIR$/Application/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.703704">
-          <caret line="83" column="55" selection-start-line="83" selection-start-column="55" selection-end-line="83" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/build.gradle">
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/base-colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3536404">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/values/template-dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/java/com/example/android/camera2basic/Camera2BasicFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.222221">
+          <caret line="879" column="95" selection-start-line="879" selection-start-column="95" selection-end-line="879" selection-end-column="95" />
+          <folding>
+            <element signature="e#36755#36756#0" expanded="true" />
+            <element signature="e#36787#36788#0" expanded="true" />
+            <element signature="e#36825#36826#0" expanded="true" />
+            <element signature="e#36859#36860#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/src/main/res/layout/fragment_camera2_basic.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5">
+          <caret line="96" column="52" selection-start-line="96" selection-start-column="52" selection-end-line="96" selection-end-column="52" />
+          <folding>
+            <element signature="e#1757#1779#0" expanded="true" />
+            <element signature="e#2317#2343#0" expanded="true" />
+            <element signature="e#2796#2822#0" expanded="true" />
+            <element signature="e#3702#3728#0" expanded="true" />
+            <element signature="e#4168#4194#0" expanded="true" />
+            <element signature="e#4997#5027#0" expanded="true" />
+            <element signature="e#5499#5516#0" expanded="true" />
+            <element signature="e#5625#5645#0" expanded="true" />
+            <element signature="e#5680#5700#0" expanded="true" />
+            <element signature="e#5998#6024#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

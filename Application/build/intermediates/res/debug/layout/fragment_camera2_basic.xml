@@ -96,7 +96,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:tint="@color/banner_background"
-            android:src="@drawable/ic_location_on_white_24dp" />
+            android:src="@drawable/ic_location_off_white_24dp" />
 
         <ImageButton
             android:id="@+id/audio"

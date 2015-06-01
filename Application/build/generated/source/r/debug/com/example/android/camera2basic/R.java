@@ -2219,20 +2219,21 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
         public static final int fab_background=0x7f02003b;
-        public static final int ic_action_info=0x7f02003c;
-        public static final int ic_center_focus_strong_white_24dp=0x7f02003d;
-        public static final int ic_flash_auto_white_24dp=0x7f02003e;
-        public static final int ic_flash_off_white_24dp=0x7f02003f;
-        public static final int ic_flash_on_white_24dp=0x7f020040;
-        public static final int ic_launcher=0x7f020041;
-        public static final int ic_location_off_white_24dp=0x7f020042;
-        public static final int ic_location_on_white_24dp=0x7f020043;
-        public static final int ic_settings_white_24dp=0x7f020044;
-        public static final int ic_volume_off_white_24dp=0x7f020045;
-        public static final int ic_volume_up_white_24dp=0x7f020046;
-        public static final int notification_template_icon_bg=0x7f020049;
-        public static final int snackbar_background=0x7f020047;
-        public static final int tile=0x7f020048;
+        public static final int gps_toggle=0x7f02003c;
+        public static final int ic_action_info=0x7f02003d;
+        public static final int ic_center_focus_strong_white_24dp=0x7f02003e;
+        public static final int ic_flash_auto_white_24dp=0x7f02003f;
+        public static final int ic_flash_off_white_24dp=0x7f020040;
+        public static final int ic_flash_on_white_24dp=0x7f020041;
+        public static final int ic_launcher=0x7f020042;
+        public static final int ic_location_off_white_24dp=0x7f020043;
+        public static final int ic_location_on_white_24dp=0x7f020044;
+        public static final int ic_settings_white_24dp=0x7f020045;
+        public static final int ic_volume_off_white_24dp=0x7f020046;
+        public static final int ic_volume_up_white_24dp=0x7f020047;
+        public static final int notification_template_icon_bg=0x7f02004a;
+        public static final int snackbar_background=0x7f020048;
+        public static final int tile=0x7f020049;
     }
     public static final class id {
         public static final int action0=0x7f0b0076;
