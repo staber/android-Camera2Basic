@@ -16,6 +16,8 @@
 
 package com.example.android.camera2basic;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -52,7 +54,10 @@ import android.view.LayoutInflater;
 import android.view.Surface;
 import android.view.TextureView;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.File;
@@ -108,6 +113,14 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
      * Camera state: Picture was taken.
      */
     private static final int STATE_PICTURE_TAKEN = 4;
+    /**
+     * Screen Flash when picture was taken.
+     */
+    private static final int SCREEN_FLASH_TIME = 75;
+    /**
+     * Screen Flash when picture was taken.
+     */
+    private static final int MENU_OPEN_TIME = 300;
 
     /**
      * {@link TextureView.SurfaceTextureListener} handles several lifecycle events on a
@@ -396,6 +409,8 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(R.id.picture).setOnClickListener(this);
         view.findViewById(R.id.info).setOnClickListener(this);
+        view.findViewById(R.id.focus).setOnClickListener(this);
+        view.findViewById(R.id.flash).setOnClickListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
     }
 
@@ -725,16 +740,62 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request,
                                                TotalCaptureResult result) {
-                    showToast("Saved to Camera Roll");
                     unlockFocus();
                 }
             };
 
             mCaptureSession.stopRepeating();
             mCaptureSession.capture(captureBuilder.build(), CaptureCallback, null);
+            flashScreen();
         } catch (CameraAccessException e) {
             e.printStackTrace();
         }
+    }
+
+    private void flashScreen() {
+        /** Quick screen flash flash */
+        mTextureView.animate().alpha(0f).setDuration(SCREEN_FLASH_TIME)
+                .withEndAction(new Runnable() {
+            @Override
+            public void run() {
+                mTextureView.animate().alpha(1f).setDuration(SCREEN_FLASH_TIME);
+            }
+        });
+
+        /** Circle hide/show flash */
+        /*final View myView  = mTextureView;
+        // get the center for the clipping circle
+        final int cx = (myView.getLeft() + myView.getRight()) / 2;
+        final int cy = (myView.getTop() + myView.getBottom()) / 2;
+
+        // get the initial radius for the clipping circle
+        int initialRadius = myView.getWidth();
+
+        // get the final radius for the clipping circle
+        final int finalRadius = Math.max(myView.getWidth(), myView.getHeight());
+
+        // create the animation (the final radius is zero)
+        Animator anim =
+                ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, 0);
+        // make the view invisible when the animation is done
+        anim.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                // create the animator for this view (the start radius is zero)
+                Animator anim =
+                        ViewAnimationUtils.createCircularReveal(myView, cx, cy, 0, finalRadius);
+
+                anim.setDuration(SCREEN_FLASH_TIME);
+                // make the view visible and start the animation
+                myView.setVisibility(View.VISIBLE);
+                anim.start();
+            }
+        });
+
+        anim.setDuration(SCREEN_FLASH_TIME);
+        // start the animation
+        anim.start();*/
     }
 
     /**
@@ -767,11 +828,28 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
             }
             case R.id.info: {
                 Activity activity = getActivity();
-                if (null != activity) {
-                    new AlertDialog.Builder(activity)
-                            .setMessage(R.string.intro_message)
-                            .setPositiveButton(android.R.string.ok, null)
-                            .show();
+                LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
+                FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                if (null != menuLayout  && null != adjustLayout) {
+                    if (menuLayout.getTranslationY() < 0) {
+                        adjustLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).start();
+                        menuLayout.animate().translationY(0f).setDuration(MENU_OPEN_TIME).start();
+                    } else {
+                        menuLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                    }
+                }
+                break;
+            }
+            default: {
+                Activity activity = getActivity();
+                LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
+                FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                if (null != menuLayout  && null != adjustLayout) {
+                    if (adjustLayout.getTranslationY() < -menuLayout.getHeight()) {
+                        adjustLayout.animate().translationY(-menuLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
+                    } else
+                        adjustLayout.animate().translationY(-menuLayout.getHeight()-adjustLayout.getHeight()).setDuration(MENU_OPEN_TIME).start();
                 }
                 break;
             }

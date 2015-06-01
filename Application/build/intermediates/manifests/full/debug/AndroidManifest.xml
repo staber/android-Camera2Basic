@@ -23,6 +23,7 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="22" />
 
+    <!-- package name and versions numbers managed by build.gradle -->
     <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
