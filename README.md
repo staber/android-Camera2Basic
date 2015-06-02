@@ -37,7 +37,7 @@ when you are done.
 [4]: https://developer.android.com/reference/android/hardware/camera2/CameraDevice.StateCallback.html
 [5]: https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html
 [6]: https://developer.android.com/reference/android/hardware/camera2/CaptureRequest.html
-[7]: https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html#capture(android.hardware.camera2.CaptureRequest, android.hardware.camera2.CameraCaptureSession.CaptureCallback, android.os.Handler)
+[7]: https://developer.android.com/reference/android/hardware/camera2/CameraCaptureSession.html
 
 Pre-requisites
 --------------
@@ -57,17 +57,12 @@ Getting Started
 This sample uses the Gradle build system. To build this project, use the
 "gradlew build" command or use "Import Project" in Android Studio.
 
-Support
+Added Features
 -------
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-If you've found an error in this sample, please file an issue:
-https://github.com/googlesamples/android-Camera2Basic
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
+- Saves jpg to Camera Roll (/DCIM/Camera/) with date and timestamp filename
+- Animated screen flash for "picture taken" feedback
+- Placeholder icons for future manual adjustments and settings
 
 License
 -------
