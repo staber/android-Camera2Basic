@@ -1320,9 +1320,9 @@
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="MaterialTheme" parent="android:Theme.Material.Light.NoActionBar.Fullscreen">
-        <item name="colorPrimary">@color/theme_base</item>
-        <item name="colorPrimaryDark">@color/theme_base_dark</item>
-        <item name="colorAccent">@color/theme_base_accent</item>
+        <item name="android:colorPrimary">@color/theme_base</item>
+        <item name="android:colorPrimaryDark">@color/theme_base_dark</item>
+        <item name="android:colorAccent">@color/theme_base_accent</item>
     </style>
     <!-- From: file:/C:/Users/astaber/Android/Projects/Camera2Basic/Application/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>

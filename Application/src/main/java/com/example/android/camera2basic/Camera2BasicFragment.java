@@ -58,6 +58,8 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import org.adw.library.widgets.discreteseekbar.DiscreteSeekBar;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -887,6 +889,7 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                 Activity activity = getActivity();
                 LinearLayout menuLayout = (LinearLayout) activity.findViewById(R.id.menu_layout);
                 final FrameLayout adjustLayout = (FrameLayout) activity.findViewById(R.id.adjustment_layout);
+                DiscreteSeekBar seekBar = (DiscreteSeekBar) activity.findViewById(R.id.seekBar);
                 if (null != menuLayout && null != adjustLayout) {
                     if (adjustLayout.getTranslationY() < -menuLayout.getHeight()) {
                         adjustLayout.animate().translationY(-menuLayout.getHeight())
@@ -896,6 +899,15 @@ public class Camera2BasicFragment extends Fragment implements View.OnClickListen
                         adjustLayout.setVisibility(View.VISIBLE);
                         adjustLayout.animate().setDuration(MENU_OPEN_TIME)
                                 .translationY(-menuLayout.getHeight() - adjustLayout.getHeight());
+                    }
+                }
+                /** Adjust Slider according to current setting */
+                switch (view.getId()) {
+                    case R.id.focus: {
+                        seekBar.setMin(0);
+                        seekBar.setMax(100);
+                        seekBar.setScrubberColor(R.color.theme_base_accent);
+                        break;
                     }
                 }
                 break;
